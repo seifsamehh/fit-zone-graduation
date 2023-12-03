@@ -11,7 +11,7 @@
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.10.1",
     "@clerk/nextjs": "^4.26.1",
-    "@nextui-org/react": "^2.1.13",
+    "@nextui-org/react": "^2.2.9",
     "@splinetool/react-spline": "^2.2.6",
     "@studio-freight/lenis": "^1.0.27",
     "@vercel/analytics": "^1.1.1",
