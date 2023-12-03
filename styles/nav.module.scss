@@ -1,0 +1,38 @@
+// start global variables
+$accent-color-light: #68b984;
+$text-color-light: #1f1e1e;
+// end global variables
+
+.navlg,
+.navsm {
+  background-color: $accent-color-light;
+  a {
+    color: $text-color-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+.navlg {
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+.navsm {
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+.navMenu {
+  display: flex;
+  justify-content: center;
+  background-color: $accent-color-light;
+  a {
+    color: $text-color-light;
+    font-size: 1.7rem;
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+}

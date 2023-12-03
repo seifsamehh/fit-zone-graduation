@@ -1,0 +1,21 @@
+.about {
+  h2 {
+    font-size: 8rem;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      font-size: 5rem;
+    }
+  }
+  p {
+    @media screen and (max-width: 991px) {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  svg {
+    z-index: -1;
+    @media screen and (max-width: 991px) {
+      bottom: 70%;
+    }
+  }
+}

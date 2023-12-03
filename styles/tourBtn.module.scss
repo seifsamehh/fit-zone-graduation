@@ -1,0 +1,16 @@
+// start global variables
+$Primary-color-light: #fed049;
+$text-color-light: #1f1e1e;
+// end global variables
+
+.tour {
+  button {
+    width: 13rem;
+    font-size: 1.3rem;
+    background-color: $Primary-color-light;
+    color: $text-color-light;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px $text-color-light;
+  }
+}

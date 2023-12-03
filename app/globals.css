@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section {
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+h1,
+h2,
+h3,
+p,
+img,
+a,
+button {
+  user-select: none;
+  outline: none;
+}
+.loading {
+  background-image: url("../public/assets/nnnoise.svg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+.loader svg polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loader svg polyline#back {
+  fill: none;
+  stroke: #1f1e1e33;
+}
+
+.loader svg polyline#front {
+  fill: none;
+  stroke: #1f1e1e;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 0;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.chat-box {
+  position: relative;
+  height: 50vh;
+  width: 700px;
+}
+@media screen and (max-width: 768px) {
+  .chat-box {
+    width: 90%;
+  }
+}
+
+.signIn,
+.signUp {
+  background-image: url("../public/assets/wave-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.cl-internal-1fsg6zy {
+  background-color: #68b984;
+}
+.cl-internal-1fsg6zy:hover {
+  background-color: #68b984;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

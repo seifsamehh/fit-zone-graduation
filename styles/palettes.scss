@@ -1,0 +1,127 @@
+// palette for light mode
+
+$Primary-color-light: #fed049; // Use this color for important elements that you want to draw attention to, such as buttons, links, or call-to-action sections
+$background-color-light: #cffde1; // For background light
+$accent-color-light: #68b984; // Use this color for secondary elements, such as dividers, borders, or progress bars.
+$text-color-light: #1f1e1e; // Utilize this color for text content throughout your website, ensuring readability and contrast against the background.
+
+// palette for dark mode
+
+$primary-color-dark: #fed049;
+$background-color-dark: #3d5656;
+$accent-color-dark: #68b984;
+$text-color-dark: #cffde1;
+
+.light {
+  background-color: $background-color-light;
+  color: $text-color-light;
+  .loading {
+    background-color: $accent-color-light;
+    .percentage {
+      position: fixed;
+      bottom: 0;
+      left: 2%;
+      h1 {
+        font-size: 10rem;
+        @media screen and (max-width: 768px) {
+          font-size: 8rem;
+        }
+      }
+    }
+  }
+  .navlg,
+  .navsm {
+    background-color: $Primary-color-light;
+    color: $text-color-light;
+  }
+  // chat
+  .cs-message-list__scroll-wrapper > .cs-message,
+  .cs-message-list__scroll-wrapper > .cs-message-group {
+    max-width: 100%;
+  }
+  .cs-button--attachment {
+    visibility: hidden;
+  }
+  .cs-main-container {
+    border: 0;
+    border-radius: 0.5rem;
+  }
+  .cs-main-container .cs-chat-container {
+    border-right: 0;
+  }
+  .cs-message-list__scroll-wrapper {
+    padding: 1rem;
+  }
+  .cs-message-list .cs-typing-indicator {
+    right: -10px;
+  }
+  .cs-message-input__content-editor-wrapper,
+  .cs-message-input__content-editor {
+    background-color: $background-color-light;
+    ::placeholder {
+      color: $text-color-light;
+    }
+  }
+  .cs-button--send {
+    color: #ffffff;
+  }
+  .cs-chat-container .cs-message-input,
+  .cs-message-list,
+  .scrollbar-container {
+    background-color: $background-color-dark;
+  }
+  .cs-message--incoming .cs-message__content {
+    background-color: $background-color-light;
+  }
+}
+
+.dark {
+  background-color: $background-color-dark;
+  color: $text-color-dark;
+  // chat
+  .cs-message-list__scroll-wrapper > .cs-message,
+  .cs-message-list__scroll-wrapper > .cs-message-group {
+    max-width: 100%;
+  }
+  .cs-button--attachment {
+    visibility: hidden;
+  }
+  .cs-main-container {
+    border: 0;
+    border-radius: 0.5rem;
+  }
+  .cs-main-container .cs-chat-container {
+    border-right: 0;
+  }
+  .cs-message-list__scroll-wrapper {
+    padding: 1rem;
+  }
+  .cs-message-list .cs-typing-indicator {
+    right: -10px;
+  }
+  .cs-chat-container .cs-message-input,
+  .cs-message-list,
+  .scrollbar-container {
+    background-color: $background-color-light;
+  }
+  .cs-message--incoming .cs-message__content {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+  .cs-message-input__content-editor-wrapper,
+  .cs-message-input__content-editor {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+    ::placeholder {
+      color: $text-color-dark;
+    }
+  }
+  .cs-button--send {
+    color: $primary-color-dark;
+  }
+}
+
+::selection {
+  background-color: $Primary-color-light;
+  color: $text-color-light;
+}

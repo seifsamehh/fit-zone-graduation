@@ -1,0 +1,31 @@
+.footer {
+  padding: 2rem 0;
+  background-color: #68b984;
+  color: #1f1e1e;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 7rem;
+  }
+}
+
+.downloadBoxs {
+  margin: 1rem 0;
+}
+
+.googlePlay,
+.iphone {
+  div {
+    p {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.googlePlay {
+  margin-right: 1rem;
+}
+
+.footerContent {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
