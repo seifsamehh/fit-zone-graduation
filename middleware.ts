@@ -8,11 +8,11 @@ export default authMiddleware({
     "/About-Us",
     "/Services",
     "/Contact-Us",
-    "privacy-policy",
+    "/privacy-policy",
     "/Home-Page",
   ],
 });
 
 export const config = {
-  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(.*)", "/(api|trpc)(.*)"],
 };
