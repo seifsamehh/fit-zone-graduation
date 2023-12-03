@@ -166,8 +166,8 @@ export default function TourBtn() {
         {
           element: "#rest",
           popover: {
-            title: "Let's have fun!",
-            description: "Here you can take a rest. And play.",
+            title: "Keep it up!",
+            description: "Stay active, keep healthy.",
             side: "top",
             align: "center",
           },
